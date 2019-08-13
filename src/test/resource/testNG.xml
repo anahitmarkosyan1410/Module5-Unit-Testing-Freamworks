@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suitTest" parallel="classes" thread-count="3">
+    <listeners>
+        <listener class-name="listeners.TestListeners"></listener>
+    </listeners>
+    <test name="Sum Cal Test">
+        <classes>
+            <class name="testNG.SumCalTest"></class>
+        </classes>
+    </test>
+    <test name="Sub Cal Test">
+        <classes>
+            <class name="testNG.SubCalTest"></class>
+        </classes>
+    </test>
+    <test name="Mult Cal Test">
+        <classes>
+            <class name="testNG.MultCalTest"></class>
+        </classes>
+    </test>
+    <test name="trigonometric functions">
+        <groups>
+            <run>
+                <include name="trigonometric functions" />
+            </run>
+        </groups>
+        <classes>
+            <class name="testNG.SinCalTest"></class>
+            <class name="testNG.CosCalTest"></class>
+        </classes>
+    </test>
+</suite>
