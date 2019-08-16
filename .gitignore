@@ -1,3 +1,5 @@
-*.iml
-.idea/
-test-output/
+
+/.idea/
+/test-output/
+Module5 Junit.iml
+
